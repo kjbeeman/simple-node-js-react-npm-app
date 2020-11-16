@@ -6,9 +6,13 @@ pipeline {
         }
     }
     stages {
-        stage('Build') { 
+        stage('Debug') { 
             steps {
                 sh 'ls'
+            }
+        }
+        stage('Build') {
+            steps {
                 sh 'npm install' 
             }
         }
