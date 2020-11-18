@@ -9,11 +9,14 @@ pipeline {
         stage('Debug') { 
             steps {
                 sh 'ls'
+                sh 'pwd'
+                sh 'hostname'
+                sh 'whoami'
             }
         }
         stage('Build') {
             steps {
-                sh 'npm install' 
+                sh 'sudo npm install' 
             }
         }
     }
