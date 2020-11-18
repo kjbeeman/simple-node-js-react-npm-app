@@ -11,7 +11,6 @@ pipeline {
                 sh 'ls'
                 sh 'pwd'
                 sh 'hostname'
-                sh 'whoami'
             }
         }
         stage('Build') {
